@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog ca nhan</title>
-    <meta http-equiv="refresh" content="100" />
-    <meta name="blog" content="blog ca nhan" />
-    <link rel="stylesheet" href="index.css" />
-    <link href="/images/webicon.png" rel="shortcut icon" />
-  </head>
-  <body>
-    <!-- Phần hình ảnh và tiêu đề đầu trang -->
-    <div class="topImage">
-      <div class="Name">
-        <div class="title-1">Diễn viên điện ảnh</div>
-        <br />
-        <div class="name-1">Ninh Dương Lan Ngọc</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog ca nhan</title>
+  <meta http-equiv="refresh" content="100" />
+  <meta name="blog" content="blog ca nhan" />
+  <link rel="stylesheet" href="index.css" />
+  <link href="/images/webicon.png" rel="shortcut icon" />
+  <script src="https://kit.fontawesome.com/593a15a285.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Phần hình ảnh và tiêu đề đầu trang -->
+  <div class="topImage">
+    <div class="blogerName">
+      <div class="title-1">Diễn viên điện ảnh</div>
+      <br />
+      <div class="name-1">Ninh Dương Lan Ngọc</div>
+    </div>
+  </div>
+  <!-- Thanh nội dung -->
+  <div class="contentBar flexbox">
+    <div class="contentItem"><a href="#">lối sống</a></div>
+    <div class="contentItem"><a href="#">du lịch</a></div>
+    <div class="contentItem"><a href="#">âm nhạc</a></div>
+    <div class="contentItem"><a href="#">thức ăn</a></div>
+    <div class="contentItem"><a href="#">phim ảnh</a></div>
+  </div>
+
+  <!-- Thumbnail bên dưới thanh nội dung -->
+  <div class="bigThumbnail flexbox">
+    <div class="thumbnailItem">
+      <div class="thumbnailText">
+        <p>Du lịch</p>
       </div>
     </div>
-    <!-- Thanh nội dung -->
-    <div class="contentBar flexbox">
-        <div class="contentItem"><a href="#">lối sống</a></div>
-        <div class="contentItem"><a href="#">du lịch</a></div>
-        <div class="contentItem"><a href="#">âm nhạc</a></div>
-        <div class="contentItem"><a href="#">thức ăn</a></div>
-        <div class="contentItem"><a href="#">phim ảnh</a></div>
-    </div>
-    <!-- Thumbnail bên dưới thanh nội dung -->
-    <!-- <div class="bigThumbnailContent flexbox">
-        <div class="thumbnailItem"><img src="/images/thumbnail1.jpg" alt="hinhAnh"></div>
-        <div class="thumbnailItem"><img src="/images/thumbnail2.jpg" alt="hinhAnh"></div>
-        <div class="thumbnailItem"><img src="/images/thumbnail3.jpg" alt="hinhAnh"></div>
-    </div> -->
 
-    <!-- TEST -->
-    <div class="bigThumbnailContent flexbox">
-      <div class="thumbnailItem"></div>
-      <div class="thumbnailItem"></div>
-      <div class="thumbnailItem"></div>
+    <div class="thumbnailItem">
+      <div class="thumbnailText">
+        <p>Thức ăn</p>
+      </div>
+    </div>
+
+    <div class="thumbnailItem">
+      <div class="thumbnailText">
+        <p>Lối sống</p>
+      </div>
     </div>
 
     <!-- Phần nội dung chính của web -->
     <div class="mainContent flexbox">
-        <!-- Phần nội dung bên trái -->
-        <div class="leftContent">
-        
+      <!-- Phần nội dung bên trái -->
+      <div class="leftContent"></div>
+
+      <!-- Phần nội dung bên phải -->
+      <div class="rightContent">
+        <div class="profile">
+          <div>
+            <img class="avatar" src="/images/avatar.jpg" alt="avatar">
+          </div>
+          <div class="name">
+            Ninh Dương <br> Lan Ngọc
+          </div>
+          <div class="country">
+            Quê quán gì đó
+          </div>
+          <div class="introduce">Phần này là phần tự giới thiệu bản thân... Alice was beginning to get very tired of
+            sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book
+            her sister was reading, but it had no pictures or conversations in
+            it, `and what is the use of a book,' thought Alice `without pictures or
+            conversation?'</div>
+          <div class="social-media flexbox">
+            <i class="fa-brands fa-facebook s-mItem"></i>
+            <i class="fa-brands fa-youtube s-mItem"></i>
+            <i class="fa-solid fa-envelope s-mItem"></i>
+            <i class="fa-brands fa-instagram s-mItem"></i>
+          </div>
         </div>
 
-        <!-- Phần nội dung bên phải -->
-        <div class="rightContent">
-            
-        </div>
+      </div>
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <p>
       Alice was beginning to get very tired of sitting by her sister on the
@@ -216,5 +232,6 @@
     </p>
     <h1>text thu font chu</h1>
     <input type="color" />
-  </body>
+</body>
+
 </html>

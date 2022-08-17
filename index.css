@@ -1,165 +1,219 @@
-:root{
-    /* Phần khai báo chung */
-    --Theme-color:rgb(254, 174, 165);
-    --Background-color:rgb(45, 48, 63);
-    --Padding-Both-side:3%;
-    /* Phần hình ảnh và tiêu đề đầu trang */
-    --Top-image-height:300px;
-    /* Phần nội dung chính của web */
-    --Left-content:70%;
+:root {
+  /* Phần khai báo chung */
+  --Theme-color: rgb(254, 174, 165);
+  --Background-color: rgb(45, 48, 63);
+  --Padding-Both-side: 3%;
+  /* Phần hình ảnh và tiêu đề đầu trang */
+  --Top-image-height: 300px;
+  /* Phần nội dung chính của web */
+  --Left-content: 70%;
 }
-body{
-    box-sizing: border-box;
-    background-color: rgb(45, 48, 63);
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+body {
+  box-sizing: border-box;
+  background-color: var(--Background-color);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 /* Phần khai báo chung */
-.flexbox{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-a:link{
-    color: white;
+a:link {
+  color: white;
 }
-a:visited{
-    color: white;
+a:visited {
+  color: white;
 }
-a{
-    text-decoration: none;
-    font-variant: small-caps;
+a {
+  text-decoration: none;
+  font-variant: small-caps;
 }
 /* Phần hình ảnh và tiêu đề đầu trang */
-.topImage{
-    position: relative;
-    background-image: url(/images/girlAndRain.jpg);
-    background-size:cover;
-    background-position-y: 100%; /*Thay đổi được */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: var(--Top-image-height);
-    margin:0px;
-    top: 0px;
-    
+.topImage {
+  position: relative;
+  background-image: url(/images/girlAndRain.jpg);
+  background-size: cover;
+  background-position-y: 100%; /*Thay đổi được */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: var(--Top-image-height);
+  margin: 0px;
+  top: 0px;
 }
-.Name{
-    text-align: center;
+.blogerName {
+  text-align: center;
 }
-.name-1{
-    position: relative;
-    height: 100px;
-    font-size: 80px;
-    display: inline-block;
-    top: 90px; /*Thay đổi được */
-    overflow: hidden;
+.name-1 {
+  position: relative;
+  height: 100px;
+  font-size: 65px;
+  display: inline-block;
+  top: 90px; /*Thay đổi được */
+  overflow: hidden;
 }
-.title-1{
-    position: relative;
-    height: 20px;
-    font-size: 20px;
-    display: inline-block;
-    top: 95px; /*Thay đổi được */
+.title-1 {
+  position: relative;
+  height: 20px;
+  font-size: 15px;
+  display: inline-block;
+  top: 95px; /*Thay đổi được */
 }
 
 /* Thanh nội dung */
-.contentBar{
-    background-color: var(--Theme-color);
-    width: 100%;
-    height: 35px; /*Thay đổi được */
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
+.contentBar {
+  background-color: var(--Theme-color);
+  width: 100%;
+  height: 35px; /*Thay đổi được */
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
 }
-.contentItem{
-    box-sizing: border-box;
-    width: 100px;
-    height: inherit;
-    margin: 0px 5px;
-    text-align: center;
-    padding: 10px;
+.contentItem {
+  box-sizing: border-box;
+  width: 100px;
+  height: inherit;
+  margin: 0px 5px;
+  text-align: center;
+  padding: 10px;
 }
-.contentItem a{
-    text-decoration: none;
-    font-variant: small-caps;
-    font-size: 15px;
-    font-weight: bold;
+.contentItem a {
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 15px;
+  font-weight: bold;
 }
-.contentItem a:link{
-    color:  var(--Background-color);
+.contentItem a:link {
+  color: var(--Background-color);
 }
-.contentItem a:visited{
-    color:  var(--Background-color);
+.contentItem a:visited {
+  color: var(--Background-color);
 }
 
 /* Thumbnail bên dưới thanh nội dung */
-/* .bigThumbnailContent{
-    box-sizing: border-box;
-    background-color: aqua;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px var(--Padding-Both-side) 25px; 
+.bigThumbnail {
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px var(--Padding-Both-side) 0px;
 }
-.thumbnailItem{
-    overflow: hidden;
-    width: 450px;
-    height: 250px;
-    margin-top: 0px; 
-    margin-bottom: 5px;
-} */
-/* TEST */
-.bigThumbnailContent{
-    box-sizing: border-box;
-    background-color: aqua;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px var(--Padding-Both-side) 25px;
+.thumbnailItem {
+  position: relative;
+  box-sizing: border-box;
+  width: 32%;
+  height: 250px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  background-size: cover; /*Thay đổi được */
+  background-repeat: no-repeat;
 }
-.thumbnailItem{
-    box-sizing: border-box;
-    background-color: brown;
-    width: 32%;
-    height: 250px;
-    margin-top: 0px; 
-    margin-bottom: 5px;
-    background-size: cover; /*Thay đổi được */
-    background-repeat: no-repeat;
+.thumbnailItem:first-child {
+  background-image: url(/images/thumbnail1.jpg);
 }
-.thumbnailItem:first-child{
-    background-image: url(/images/thumbnail1.jpg);
+.thumbnailItem:nth-child(2) {
+  background-image: url(/images/thumbnail2.jpg);
 }
-.thumbnailItem:nth-child(2){
-    background-image: url(/images/thumbnail2.jpg);
+.thumbnailItem:nth-child(3) {
+  background-image: url(/images/thumbnail3.jpg);
 }
-.thumbnailItem:last-child{
-    background-image: url(/images/thumbnail3.jpg);
+.thumbnailText {
+  position: absolute;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 2px solid white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  font-size: 30px; /*Thay đổi được */
+  width: 90%;
+  height: 85%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.thumbnailText p {
+  position: absolute;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 /* Phần nội dung chính của web */
-.mainContent{
-    position: relative;
-    box-sizing: border-box;
-    justify-content: space-between;
-    background-color: antiquewhite;
-    padding-left: var(--Padding-Both-side);
-    padding-right: var(--Padding-Both-side);
-    width: 100%;
-    height: 500px;
+.mainContent {
+  position: relative;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 100%;
+  height: 1500px; /* Làm xong xóa phần này */
+  margin-top: 25px;
 }
-.leftContent{
-    box-sizing: border-box;
-    width: var(--Left-content);
-    height: 500px;
-    background-color: cadetblue;
+.leftContent {
+  box-sizing: border-box;
+  width: var(--Left-content);
+  height: 1500px; /* Làm xong xóa phần này */
+  background-color: cadetblue;
 }
-.rightContent{
-    box-sizing: border-box;
-    width: calc(100% - var(--Left-content) - 3%);
-    height: 500px;
-    background-color: yellowgreen;
+.rightContent {
+  box-sizing: border-box;
+  width: calc(100% - var(--Left-content) - 3%);
+  height: 1500px; /* Làm xong xóa phần này */
+  background-color: yellowgreen;
 }
+
+/* Phần nội dung bên phải */
+/* Profile */
+.profile {
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url(/images/leftprofile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.avatar {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 50%;
+  background-color: burlywood;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-top: 40px !important;
+}
+.name {
+  margin-top: 15px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.country {
+  margin: 0px;
+  font-size: 15px;
+}
+.introduce {
+  padding: 0px 10%;
+  margin-top: 20px;
+}
+.social-media{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    padding-bottom: 30px;
+}
+.s-mItem{
+    display: inline-block;
+    size: 10px;
+    font-size: 30px;
+    margin: 5px 5px;
+}
+
