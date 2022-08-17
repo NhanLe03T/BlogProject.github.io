@@ -72,6 +72,7 @@ a{
     height: 35px; /*Thay đổi được */
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 .contentItem{
     box-sizing: border-box;
@@ -95,20 +96,48 @@ a{
 }
 
 /* Thumbnail bên dưới thanh nội dung */
+/* .bigThumbnailContent{
+    box-sizing: border-box;
+    background-color: aqua;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px var(--Padding-Both-side) 25px; 
+}
+.thumbnailItem{
+    overflow: hidden;
+    width: 450px;
+    height: 250px;
+    margin-top: 0px; 
+    margin-bottom: 5px;
+} */
+/* TEST */
 .bigThumbnailContent{
     box-sizing: border-box;
     background-color: aqua;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 30px var(--Padding-Both-side) 25px; /*Thay đổi được */
+    padding: 30px var(--Padding-Both-side) 25px;
 }
 .thumbnailItem{
-    overflow: hidden;
-    width: 450px;
+    box-sizing: border-box;
+    background-color: brown;
+    width: 32%;
     height: 250px;
-    margin-top: 0px; /*Thay đổi được */
+    margin-top: 0px; 
     margin-bottom: 5px;
+    background-size: cover; /*Thay đổi được */
+    background-repeat: no-repeat;
+}
+.thumbnailItem:first-child{
+    background-image: url(/images/thumbnail1.jpg);
+}
+.thumbnailItem:nth-child(2){
+    background-image: url(/images/thumbnail2.jpg);
+}
+.thumbnailItem:last-child{
+    background-image: url(/images/thumbnail3.jpg);
 }
 
 /* Phần nội dung chính của web */
