@@ -21,6 +21,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
+html{
+  font-size: 16px;
+}
 /* Phần khai báo chung */
 .flexbox {
   display: flex;
@@ -75,14 +78,13 @@ a {
 }
 .name-1 {
   position: relative;
-  font-size: 60px;
+  font-size: 4rem;
   display: inline-block;
   overflow: hidden;
 }
 .title-1 {
   position: relative;
   height: 20px;
-  font-size: 15px;
   display: inline-block;
 }
 
@@ -106,7 +108,6 @@ a {
 .contentItem a {
   text-decoration: none;
   font-variant: small-caps;
-  font-size: 15px;
   font-weight: bold;
 }
 .contentItem a:link {
@@ -152,7 +153,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 
-  font-size: 30px; /*Thay đổi được */
+  font-size: 2rem;
   width: 90%;
   height: 85%;
   left: 50%;
@@ -208,20 +209,18 @@ a {
   box-sizing: border-box;
   display: inline-block;
   max-width: 50%;
-  background-color: burlywood;
   border-radius: 50%;
   border: 2px solid black;
   margin-top: 40px !important;
 }
 .name {
   margin-top: 15px;
-  font-size: 30px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bolder;
 }
 .country {
   margin: 0px;
-  font-size: 15px;
 }
 .introduce {
   padding: 0px 10%;
@@ -239,7 +238,7 @@ a {
 }
 .s-mItem{
     size: 10px;
-    font-size: 30px;
+    font-size: 2rem;
     margin: 5px 5px;
 }
 /* Phần danh mục (categories)*/
@@ -253,7 +252,7 @@ a {
   cursor: pointer;
   list-style: none;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--Background-color);
   padding-bottom: 3px;
   font-weight: bold;
   margin-top: 5px;
@@ -270,26 +269,49 @@ a {
   margin-bottom: 3px;
 }
 /* Phần những bài post gần đây (recent posts) */
-.recent-posts{
-  height: 1500px; /* Xong thì xóa */
-}
 .rec-posts-container{
   box-sizing: border-box;
   margin-top: 20px;
+  text-align: start;
   width: 100%;
-  height: 500px;
-  background-color: aquamarine;
+  padding-bottom: 20px;
 }
 .post{
   width: 100%;
-  height: 200px; /* Xong thì xóa */
-  background-color: peru;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--Background-color);
+  padding-bottom: 5px;
+  flex-wrap: nowrap;
+  margin-top: 5px;
 }
-.post img{
+.post > img{
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 60px;
 }
-.test{
-  width: 300px;
+.post-details{
+  display: inline-block;
+  margin-left: 20px;
+}
+.post-name{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.post-date{
+  font-size: 0.7rem;
+}
+
+/* Phần quan điểm cá nhân (My two cents)*/
+.opinion{
+  margin-top: 30px;
+  padding-bottom: 20px;
+  text-align: start;
+}
+/* Phần fanpage */
+.fb-page{
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  overflow: auto;
 }
