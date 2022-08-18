@@ -190,8 +190,6 @@ a {
 .rightContent {
   box-sizing: border-box;
   width: calc(100% - var(--Left-content) - 3%);
-  height: 2500px; /* Làm xong xóa phần này */
-  background-color: yellowgreen; /* Làm xong xóa phần này */
 }
 
 /* Phần nội dung bên phải */
@@ -311,6 +309,12 @@ a {
 /* Phần fanpage */
 .fb-page{
   width: 100%;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  overflow: auto;
+}
+/* Phần youtube */
+.youtube{
   margin-top: 30px;
   padding-bottom: 30px;
   overflow: auto;
