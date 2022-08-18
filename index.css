@@ -7,6 +7,11 @@
   --Top-image-height: 300px;
   /* Phần nội dung chính của web */
   --Left-content: 70%;
+  /* Phần nội dung bên phải */
+  --Right-top-margin:20px;
+  --Right-top-content-margin:35px;
+  --Right-top-content-padding:10%;
+  --Right-box-color:rgb(79,79,91);
 }
 body {
   box-sizing: border-box;
@@ -32,12 +37,28 @@ a {
   text-decoration: none;
   font-variant: small-caps;
 }
+.creBox{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--Right-box-color);
+  margin-top: var(--Right-top-margin);
+  box-shadow: 1px 1px 2px black;
+  text-align: center;
+  padding-left: var(--Right-top-content-padding);
+  padding-right: var(--Right-top-content-padding);
+}
+.creBox-title{
+  font-variant: small-caps;
+  border-bottom: 2px solid var(--Theme-color);
+  display: inline-block;
+  padding-bottom: 3px;
+  margin-top: var(--Right-top-content-margin) !important;
+}
 /* Phần hình ảnh và tiêu đề đầu trang */
 .topImage {
   position: relative;
   background-image: url(/images/girlAndRain.jpg);
   background-size: cover;
-  background-position-y: 100%; /*Thay đổi được */
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -47,13 +68,15 @@ a {
 }
 .blogerName {
   text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .name-1 {
   position: relative;
-  height: 100px;
-  font-size: 65px;
+  font-size: 60px;
   display: inline-block;
-  top: 90px; /*Thay đổi được */
   overflow: hidden;
 }
 .title-1 {
@@ -61,22 +84,21 @@ a {
   height: 20px;
   font-size: 15px;
   display: inline-block;
-  top: 95px; /*Thay đổi được */
 }
 
 /* Thanh nội dung */
 .contentBar {
   background-color: var(--Theme-color);
   width: 100%;
-  height: 35px; /*Thay đổi được */
   align-items: center;
   justify-content: center;
   overflow: auto;
+  box-shadow: 1px 1px 2px black;
 }
 .contentItem {
   box-sizing: border-box;
   width: 100px;
-  height: inherit;
+  height: 35px;
   margin: 0px 5px;
   text-align: center;
   padding: 10px;
@@ -111,6 +133,7 @@ a {
   margin-bottom: 5px;
   background-size: cover; /*Thay đổi được */
   background-repeat: no-repeat;
+  box-shadow: 1px 1px 2px black;
 }
 .thumbnailItem:first-child {
   background-image: url(/images/thumbnail1.jpg);
@@ -154,20 +177,20 @@ a {
   box-sizing: border-box;
   justify-content: space-between;
   width: 100%;
-  height: 1500px; /* Làm xong xóa phần này */
+  height: 2500px; /* Làm xong xóa phần này */
   margin-top: 25px;
 }
 .leftContent {
   box-sizing: border-box;
   width: var(--Left-content);
-  height: 1500px; /* Làm xong xóa phần này */
+  height: 2500px; /* Làm xong xóa phần này */
   background-color: cadetblue;
 }
 .rightContent {
   box-sizing: border-box;
   width: calc(100% - var(--Left-content) - 3%);
-  height: 1500px; /* Làm xong xóa phần này */
-  background-color: yellowgreen;
+  height: 2500px; /* Làm xong xóa phần này */
+  background-color: yellowgreen; /* Làm xong xóa phần này */
 }
 
 /* Phần nội dung bên phải */
@@ -179,6 +202,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  box-shadow: 1px 1px 2px black;
 }
 .avatar {
   box-sizing: border-box;
@@ -210,10 +234,62 @@ a {
     margin-top: 25px;
     padding-bottom: 30px;
 }
+.social-media a{
+  display: inline-block;
+}
 .s-mItem{
-    display: inline-block;
     size: 10px;
     font-size: 30px;
     margin: 5px 5px;
 }
-
+/* Phần danh mục (categories)*/
+.cate-menu{
+  text-align: start !important;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+.cate-summary{
+  box-sizing: border-box;
+  cursor: pointer;
+  list-style: none;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.cate-item{
+  position: relative;
+  left: 20px;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.cate-item a{
+  display: block;
+  font-variant: normal;
+  margin-bottom: 3px;
+}
+/* Phần những bài post gần đây (recent posts) */
+.recent-posts{
+  height: 1500px; /* Xong thì xóa */
+}
+.rec-posts-container{
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 100%;
+  height: 500px;
+  background-color: aquamarine;
+}
+.post{
+  width: 100%;
+  height: 200px; /* Xong thì xóa */
+  background-color: peru;
+}
+.post img{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.test{
+  width: 300px;
+}
