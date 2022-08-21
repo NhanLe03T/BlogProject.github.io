@@ -24,7 +24,12 @@ body {
 html{
   font-size: 16px;
 }
-/* Phần khai báo chung */
+/* ####Phần khai báo chung#### */
+.centering{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 .flexbox {
   display: flex;
   flex-direction: row;
@@ -57,7 +62,7 @@ a {
   padding-bottom: 3px;
   margin-top: var(--Right-top-content-margin) !important;
 }
-/* Phần hình ảnh và tiêu đề đầu trang */
+/* ####Phần hình ảnh và tiêu đề đầu trang#### */
 .topImage {
   position: relative;
   background-image: url(/images/girlAndRain.jpg);
@@ -72,9 +77,6 @@ a {
 .blogerName {
   text-align: center;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 .name-1 {
   position: relative;
@@ -88,7 +90,7 @@ a {
   display: inline-block;
 }
 
-/* Thanh nội dung */
+/* ####Thanh nội dung#### */
 .contentBar {
   background-color: var(--Theme-color);
   width: 100%;
@@ -117,7 +119,7 @@ a {
   color: var(--Background-color);
 }
 
-/* Thumbnail bên dưới thanh nội dung */
+/* ####Thumbnail bên dưới thanh nội dung#### */
 .bigThumbnail {
   box-sizing: border-box;
   width: 100%;
@@ -156,9 +158,6 @@ a {
   font-size: 2rem;
   width: 90%;
   height: 85%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 .thumbnailText p {
   position: absolute;
@@ -166,33 +165,28 @@ a {
   display: inline-block;
   margin: 0px;
   padding: 0px;
-  left: 50%;
-  top: 50%;
   text-align: center;
-  transform: translate(-50%, -50%);
 }
 
-/* Phần nội dung chính của web */
+/* ####Phần nội dung chính của web#### */
 .mainContent {
   position: relative;
   box-sizing: border-box;
   justify-content: space-between;
   width: 100%;
-  height: 2500px; /* Làm xong xóa phần này */
   margin-top: 25px;
+  padding: 0px var(--Padding-Both-side);
 }
 .leftContent {
   box-sizing: border-box;
   width: var(--Left-content);
-  height: 2500px; /* Làm xong xóa phần này */
-  background-color: cadetblue;
 }
 .rightContent {
   box-sizing: border-box;
   width: calc(100% - var(--Left-content) - 3%);
 }
 
-/* Phần nội dung bên phải */
+/* ###Phần nội dung bên phải### */
 /* Profile */
 .profile {
   box-sizing: border-box;
@@ -236,7 +230,7 @@ a {
 }
 .s-mItem{
     size: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 5px 5px;
 }
 /* Phần danh mục (categories)*/
@@ -318,4 +312,119 @@ a {
   margin-top: 30px;
   padding-bottom: 30px;
   overflow: auto;
+}
+/* ###Phần nội dung bên trái### */
+/* ##Phần nội dung đang đọc## */
+.reading{
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--Right-box-color);
+}
+/* tiêu đề */
+.heading{
+  margin-top: 20px;
+}
+.big-title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Thông tin(người viết, thời gian, số comment) */
+.info{
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.info > a{
+  display: inline-block;
+  margin-left: 20px;
+}
+.info i{
+  color: var(--Theme-color);
+}
+/* hình ảnh */
+.reading img{
+  max-width: 100%;
+}
+/* phần nội dung bài viết */
+.script{
+  padding: 0px 50px;
+  text-align: justify;
+  margin-top: 20px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+/* Mở rộng ra để đọc */
+.expand{
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+}
+.expand fieldset{
+  border: none;
+  border-top: 2px solid var(--Theme-color);
+  width: 100%;
+  padding: 5px;
+}
+.expand .social-media{
+  margin-top: 0px;
+}
+
+/* ##Menu danh sách nội dung## */
+.menu-content{
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: space-between;
+}
+.menu-content-title{
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-img img{
+  max-width: 100%;
+  margin-top: 20px;
+}
+.mini-script{
+  -webkit-line-clamp: 3;
+  padding: 0px;
+}
+/* Phần chứa của một item trong danh sách */
+.menu-item{
+  width: 48%;
+  border-bottom: 2px solid var(--Right-box-color);
+}
+
+/* ####Phần thư viện ảnh#### */
+/* Phần tiêu đề */
+.gallery-container{
+  margin-top:100px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px !important;
+}
+.gallery-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.gall-big-title{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.gall-sub-title{
+  font-variant: small-caps;
+}
+.gallery > img{
+  width: 16.666666%;
+}
+.copyright{
+  text-align: center;
+  padding: 5px;
+  font-size: 0.5rem;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,15 +14,15 @@
 </head>
 
 <body>
-  <!-- Phần hình ảnh và tiêu đề đầu trang -->
+  <!-- ####Phần hình ảnh và tiêu đề đầu trang#### -->
   <div class="topImage">
-    <div class="blogerName">
+    <div class="blogerName centering">
       <div class="title-1">Diễn viên điện ảnh</div>
       <br />
       <div class="name-1">Ninh Dương Lan Ngọc</div>
     </div>
   </div>
-  <!-- Thanh nội dung -->
+  <!-- ####Thanh nội dung#### -->
   <div class="contentBar flexbox">
     <div class="contentItem"><a href="#">lối sống</a></div>
     <div class="contentItem"><a href="#">du lịch</a></div>
@@ -31,33 +31,275 @@
     <div class="contentItem"><a href="#">phim ảnh</a></div>
   </div>
 
-  <!-- Thumbnail bên dưới thanh nội dung -->
+  <!-- ####Thumbnail bên dưới thanh nội dung#### -->
   <div class="bigThumbnail flexbox">
     <div class="thumbnailItem">
-      <div class="thumbnailText">
-        <p>Du lịch</p>
+      <div class="thumbnailText centering">
+        <p class="centering">Du lịch</p>
       </div>
     </div>
 
     <div class="thumbnailItem">
-      <div class="thumbnailText">
-        <p>Thức ăn</p>
+      <div class="thumbnailText centering">
+        <p class="centering">Thức ăn</p>
       </div>
     </div>
 
     <div class="thumbnailItem">
-      <div class="thumbnailText">
-        <p>Lối sống</p>
+      <div class="thumbnailText centering">
+        <p class="centering">Lối sống</p>
       </div>
     </div>
+  </div>
 
-    <!-- Phần nội dung chính của web -->
+    <!-- ####Phần nội dung chính của web#### -->
     <div class="mainContent flexbox">
-      <!-- Phần nội dung bên trái -->
+      <!-- ###Phần nội dung bên trái### -->
       <div class="leftContent">
-        
+        <!-- ##Phần nội dung đang đọc## -->
+        <div class="reading">
+          <!-- tag -->
+          <div class="creBox-title"><a href="#">lối sống</a></div>
+          <!-- tiêu đề -->
+          <div class="heading">
+            <div class="big-title">
+              Tiêu đề Demo số 1
+            </div>
+            <div class="sub-title">
+              ~Death is like the wind, always by my side.~
+            </div>
+          </div>
+          <!-- Thông tin(người viết, thời gian, số comment) -->
+          <div class="info flexbox">
+            <a class="author" href="#"><i class="fa-regular fa-user"></i> nọc</a>
+            <a class="time" href="#"><i class="fa-regular fa-clock"></i> ngày-tháng-năm</a>
+            <a class="comments" href="#"><i class="fa-regular fa-message"></i> 0 comments</a>
+          </div>
+          <!-- hình ảnh -->
+          <div><img src="/images/post-thumbnail-1.jpg" alt="thumbnail"></div>
+          <!-- phần nội dung bài viết -->
+          <div class="script">
+            The story was originally told by Carroll to Lorina, Alice, and Edith Liddell (the daughters of Henry George
+            Liddell, dean of Christ Church, Oxford, where the author had studied and held a fellowship) on a picnic in
+            July 1862. Alice asked Carroll to write out the stories for her, and in response he produced a hand-lettered
+            collection entitled Alices Adventures Under Ground. A visitor to the Liddell home saw the storybook and
+            thought it should be published, so Carroll revised and expanded it. Appearing at a time when childrens
+            literature generally was intended to teach moral lessons, the book at first baffled critics, who failed to
+            appreciate the nonsense that so captivated its young readers. But Carroll understood how childrens minds
+            worked, and the way he turned logic on its head appealed to their sense of the ridiculous. In the riddles
+            and the poems—such as “How doth the little crocodile” and “You are old, Father William” (both parodies of
+            well-known didactic poems)—he reached even more absurd heights. The work attracted a following and led to a
+            sequel, Through the Looking-Glass, and What Alice Found There (dated 1872 but published in December 1871).
+            By the end of the 19th century, Alice (taking the two volumes together) had become the most popular
+            childrens book in England, and within two more decades it was among the most popular storybooks in the
+            world. It inspired numerous films, theatrical performances, and ballets as well as countless works of
+            scholarly analysis.
+          </div>
+          <div class="expand">
+            <!-- Mở rộng ra để đọc -->
+            <fieldset>
+              <legend>Tiếp tục đọc</legend>
+              <div class="social-media flexbox">
+                <a href="https://www.facebook.com/fromninhduonglanngoc" target="_blank"><i
+                    class="fa-brands fa-facebook s-mItem"></i></a>
+                <a href="https://www.youtube.com/NinhD%C6%B0%C6%A1ngLanNg%E1%BB%8DcOfficial" target="_blank"><i
+                    class="fa-brands fa-youtube s-mItem"></i></a>
+                <a href="mailto:ninhduonglanngoc.official@gmail.com" target="_blank"><i
+                    class="fa-solid fa-envelope s-mItem"></i></a>
+                <a href="https://www.instagram.com/ninh.duong.lan.ngoc/" target="_blank"><i
+                    class="fa-brands fa-instagram s-mItem"></i></a>
+              </div>
+            </fieldset>
+          </div>
+        </div><!-- Phần nội dung đang đọc -->
+
+
+        <!-- ##Menu danh sách nội dung## -->
+        <div class="menu-content flexbox">
+
+          <div class="menu-item">
+            <!-- tag -->
+            <div class="creBox-title"><a href="#">Tag gì đó ở đây</a></div>
+            <!-- tiêu đề -->
+            <div class="heading big-title menu-content-title">
+              Tiêu đề Demo số 1 bla bla bla bla
+            </div>
+            <div><a href="#">ngày-tháng-năm</a></div>
+            <div class="menu-img"><img src="/images/post-thumbnail-2.jpg" alt="thumbnail"></div>
+            <p class="script mini-script">
+              Có thể nói, bản tuyên ngôn ra đời mang tầm vóc lịch sử lớn của dân tộc ta. Đó là khi cách mạng tháng Tám
+              thành công nhưng ngay sau đó Mỹ âm mưu nhảy vào nước ta với tham vọng xâm lược nước ta. Chúng kéo theo bọn
+              tay sai phản động và đồng minh của chúng. Trước tình hình ấy Hồ Chí Minh đã đọc bản tuyên ngôn độc lập để
+              khẳng định chủ quyền của đất nước ta.
+
+              Mở đầu bản tuyên ngôn Người nêu ra một nguyên lý mang tính phổ quát: “tất cả mọi người sinh ra và các dân
+              tộc trên thế giới đều có quyền bình đẳng, quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. Có thể
+              nói đây là đoạn văn vừa khéo léo tài tình lại vừa kiên quyết. Hồ Chí Minh khẳng định điều đó bằng cách
+              trích
+              dẫn những lời lẽ mà tổ tiên người Pháp và Mỹ đã ghi lại trong hai bản tuyên ngôn Pháp và Mỹ- đây là hai
+              bản
+              tuyên ngôn từng làm rạng rỡ cho truyền thống văn hóa và những tư tưởng văn hóa của dân tộc. Nó trở thành
+              lí
+              lẽ bất hủ không ai chối cãi được.
+
+              Cách viền dẫn ấy thể hiện sự kiên quyết trong từng câu chữ, nói như thế nhằm đánh trúng tim đen của đối
+              phương và kiên quyết nhắc nhở họ đừng phản bội chính những gì mà ông cha chúng đã nêu cao. Đừng chà đạp
+              vào
+              những giá trị mà ông cha chúng đã dày công xây dựng. Nếu chúng làm trái thì chẳng khác nào đạp đổ hết bao
+              nhiêu sương máu mà ông cha chúng đã mất đi để nói lên những bản tuyên ngôn như thế. Chúng đã làm vây bẩn
+              lá
+              cờ nhân đạo ấy.
+            </p>
+          </div> <!-- menu-item -->
+
+          <div class="menu-item">
+            <!-- tag -->
+            <div class="creBox-title"><a href="#">Tag gì đó ở đây</a></div>
+            <!-- tiêu đề -->
+            <div class="heading big-title menu-content-title">
+              Tiêu đề Demo số 1
+            </div>
+            <div><a href="#">ngày-tháng-năm</a></div>
+            <div class="menu-img"><img src="/images/post-thumbnail-2.jpg" alt="thumbnail"></div>
+            <p class="script mini-script">
+              Có thể nói, bản tuyên ngôn ra đời mang tầm vóc lịch sử lớn của dân tộc ta. Đó là khi cách mạng tháng Tám
+              thành công nhưng ngay sau đó Mỹ âm mưu nhảy vào nước ta với tham vọng xâm lược nước ta. Chúng kéo theo bọn
+              tay sai phản động và đồng minh của chúng. Trước tình hình ấy Hồ Chí Minh đã đọc bản tuyên ngôn độc lập để
+              khẳng định chủ quyền của đất nước ta.
+
+              Mở đầu bản tuyên ngôn Người nêu ra một nguyên lý mang tính phổ quát: “tất cả mọi người sinh ra và các dân
+              tộc trên thế giới đều có quyền bình đẳng, quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. Có thể
+              nói đây là đoạn văn vừa khéo léo tài tình lại vừa kiên quyết. Hồ Chí Minh khẳng định điều đó bằng cách
+              trích
+              dẫn những lời lẽ mà tổ tiên người Pháp và Mỹ đã ghi lại trong hai bản tuyên ngôn Pháp và Mỹ- đây là hai
+              bản
+              tuyên ngôn từng làm rạng rỡ cho truyền thống văn hóa và những tư tưởng văn hóa của dân tộc. Nó trở thành
+              lí
+              lẽ bất hủ không ai chối cãi được.
+
+              Cách viền dẫn ấy thể hiện sự kiên quyết trong từng câu chữ, nói như thế nhằm đánh trúng tim đen của đối
+              phương và kiên quyết nhắc nhở họ đừng phản bội chính những gì mà ông cha chúng đã nêu cao. Đừng chà đạp
+              vào
+              những giá trị mà ông cha chúng đã dày công xây dựng. Nếu chúng làm trái thì chẳng khác nào đạp đổ hết bao
+              nhiêu sương máu mà ông cha chúng đã mất đi để nói lên những bản tuyên ngôn như thế. Chúng đã làm vây bẩn
+              lá
+              cờ nhân đạo ấy.
+            </p>
+          </div> <!-- menu-item -->
+
+          <div class="menu-item">
+            <!-- tag -->
+            <div class="creBox-title"><a href="#">Tag gì đó ở đây</a></div>
+            <!-- tiêu đề -->
+            <div class="heading big-title menu-content-title">
+              Tiêu đề Demo số 1
+            </div>
+            <div><a href="#">ngày-tháng-năm</a></div>
+            <div class="menu-img"><img src="/images/post-thumbnail-2.jpg" alt="thumbnail"></div>
+            <p class="script mini-script">
+              Có thể nói, bản tuyên ngôn ra đời mang tầm vóc lịch sử lớn của dân tộc ta. Đó là khi cách mạng tháng Tám
+              thành công nhưng ngay sau đó Mỹ âm mưu nhảy vào nước ta với tham vọng xâm lược nước ta. Chúng kéo theo bọn
+              tay sai phản động và đồng minh của chúng. Trước tình hình ấy Hồ Chí Minh đã đọc bản tuyên ngôn độc lập để
+              khẳng định chủ quyền của đất nước ta.
+
+              Mở đầu bản tuyên ngôn Người nêu ra một nguyên lý mang tính phổ quát: “tất cả mọi người sinh ra và các dân
+              tộc trên thế giới đều có quyền bình đẳng, quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. Có thể
+              nói đây là đoạn văn vừa khéo léo tài tình lại vừa kiên quyết. Hồ Chí Minh khẳng định điều đó bằng cách
+              trích
+              dẫn những lời lẽ mà tổ tiên người Pháp và Mỹ đã ghi lại trong hai bản tuyên ngôn Pháp và Mỹ- đây là hai
+              bản
+              tuyên ngôn từng làm rạng rỡ cho truyền thống văn hóa và những tư tưởng văn hóa của dân tộc. Nó trở thành
+              lí
+              lẽ bất hủ không ai chối cãi được.
+
+              Cách viền dẫn ấy thể hiện sự kiên quyết trong từng câu chữ, nói như thế nhằm đánh trúng tim đen của đối
+              phương và kiên quyết nhắc nhở họ đừng phản bội chính những gì mà ông cha chúng đã nêu cao. Đừng chà đạp
+              vào
+              những giá trị mà ông cha chúng đã dày công xây dựng. Nếu chúng làm trái thì chẳng khác nào đạp đổ hết bao
+              nhiêu sương máu mà ông cha chúng đã mất đi để nói lên những bản tuyên ngôn như thế. Chúng đã làm vây bẩn
+              lá
+              cờ nhân đạo ấy.
+            </p>
+          </div> <!-- menu-item -->
+
+          <div class="menu-item">
+            <!-- tag -->
+            <div class="creBox-title"><a href="#">Tag gì đó ở đây</a></div>
+            <!-- tiêu đề -->
+            <div class="heading big-title menu-content-title">
+              Tiêu đề Demo số 1
+            </div>
+            <div><a href="#">ngày-tháng-năm</a></div>
+            <div class="menu-img"><img src="/images/post-thumbnail-2.jpg" alt="thumbnail"></div>
+            <p class="script mini-script">
+              Có thể nói, bản tuyên ngôn ra đời mang tầm vóc lịch sử lớn của dân tộc ta. Đó là khi cách mạng tháng Tám
+              thành công nhưng ngay sau đó Mỹ âm mưu nhảy vào nước ta với tham vọng xâm lược nước ta. Chúng kéo theo bọn
+              tay sai phản động và đồng minh của chúng. Trước tình hình ấy Hồ Chí Minh đã đọc bản tuyên ngôn độc lập để
+              khẳng định chủ quyền của đất nước ta.
+
+              Mở đầu bản tuyên ngôn Người nêu ra một nguyên lý mang tính phổ quát: “tất cả mọi người sinh ra và các dân
+              tộc trên thế giới đều có quyền bình đẳng, quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. Có thể
+              nói đây là đoạn văn vừa khéo léo tài tình lại vừa kiên quyết. Hồ Chí Minh khẳng định điều đó bằng cách
+              trích
+              dẫn những lời lẽ mà tổ tiên người Pháp và Mỹ đã ghi lại trong hai bản tuyên ngôn Pháp và Mỹ- đây là hai
+              bản
+              tuyên ngôn từng làm rạng rỡ cho truyền thống văn hóa và những tư tưởng văn hóa của dân tộc. Nó trở thành
+              lí
+              lẽ bất hủ không ai chối cãi được.
+
+              Cách viền dẫn ấy thể hiện sự kiên quyết trong từng câu chữ, nói như thế nhằm đánh trúng tim đen của đối
+              phương và kiên quyết nhắc nhở họ đừng phản bội chính những gì mà ông cha chúng đã nêu cao. Đừng chà đạp
+              vào
+              những giá trị mà ông cha chúng đã dày công xây dựng. Nếu chúng làm trái thì chẳng khác nào đạp đổ hết bao
+              nhiêu sương máu mà ông cha chúng đã mất đi để nói lên những bản tuyên ngôn như thế. Chúng đã làm vây bẩn
+              lá
+              cờ nhân đạo ấy.
+            </p>
+          </div> <!-- menu-item -->
+
+          <div class="menu-item">
+            <!-- tag -->
+            <div class="creBox-title"><a href="#">Tag gì đó ở đây</a></div>
+            <!-- tiêu đề -->
+            <div class="heading big-title menu-content-title">
+              Tiêu đề Demo số 1
+            </div>
+            <div><a href="#">ngày-tháng-năm</a></div>
+            <div class="menu-img"><img src="/images/post-thumbnail-2.jpg" alt="thumbnail"></div>
+            <p class="script mini-script">
+              Có thể nói, bản tuyên ngôn ra đời mang tầm vóc lịch sử lớn của dân tộc ta. Đó là khi cách mạng tháng Tám
+              thành công nhưng ngay sau đó Mỹ âm mưu nhảy vào nước ta với tham vọng xâm lược nước ta. Chúng kéo theo bọn
+              tay sai phản động và đồng minh của chúng. Trước tình hình ấy Hồ Chí Minh đã đọc bản tuyên ngôn độc lập để
+              khẳng định chủ quyền của đất nước ta.
+
+              Mở đầu bản tuyên ngôn Người nêu ra một nguyên lý mang tính phổ quát: “tất cả mọi người sinh ra và các dân
+              tộc trên thế giới đều có quyền bình đẳng, quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. Có thể
+              nói đây là đoạn văn vừa khéo léo tài tình lại vừa kiên quyết. Hồ Chí Minh khẳng định điều đó bằng cách
+              trích
+              dẫn những lời lẽ mà tổ tiên người Pháp và Mỹ đã ghi lại trong hai bản tuyên ngôn Pháp và Mỹ- đây là hai
+              bản
+              tuyên ngôn từng làm rạng rỡ cho truyền thống văn hóa và những tư tưởng văn hóa của dân tộc. Nó trở thành
+              lí
+              lẽ bất hủ không ai chối cãi được.
+
+              Cách viền dẫn ấy thể hiện sự kiên quyết trong từng câu chữ, nói như thế nhằm đánh trúng tim đen của đối
+              phương và kiên quyết nhắc nhở họ đừng phản bội chính những gì mà ông cha chúng đã nêu cao. Đừng chà đạp
+              vào
+              những giá trị mà ông cha chúng đã dày công xây dựng. Nếu chúng làm trái thì chẳng khác nào đạp đổ hết bao
+              nhiêu sương máu mà ông cha chúng đã mất đi để nói lên những bản tuyên ngôn như thế. Chúng đã làm vây bẩn
+              lá
+              cờ nhân đạo ấy.
+            </p>
+          </div> <!-- menu-item -->
+
+
+
+
+        </div><!-- ##Menu danh sách nội dung## -->
+
+
       </div> <!-- Phần nội dung bên trái -->
-      <!-- Phần nội dung bên phải -->
+      <!-- ###Phần nội dung bên phải### -->
       <div class="rightContent">
         <!-- Profile -->
         <div class="profile">
@@ -68,7 +310,7 @@
             Ninh Dương <br> Lan Ngọc
           </div>
           <div class="country">
-            Quê quán gì đó
+            <i class="fa-solid fa-location-dot"></i> Quê quán gì đó
           </div>
           <div class="introduce">Phần này là phần tự giới thiệu bản thân... Alice was beginning to get very tired of
             sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book
@@ -229,11 +471,41 @@
               allowfullscreen></iframe>
           </div>
         </div>
-      </div> <!-- Phần nội dung bên phải -->
-    </div><!-- Phần nội dung chính của web -->
+      </div> <!-- ###Phần nội dung bên phải### -->
+    </div><!-- ####Phần nội dung chính của web#### -->
+    <div class="gallery-container"> <!-- ####Phần thư viện ảnh#### -->
+      <!-- Phần tiêu đề -->
+      <div class="gallery-title">
+        <div class="gall-big-title">
+          instagram
+        </div>
+        <div class="gall-sub-title">
+          theo dõi tôi!
+        </div>
+      </div>
+      <!-- Phần ảnh -->
+      <div class="gallery flexbox">
+        <img src="/images/instagram-1.jpg" alt="hinhAnh">
+        <img src="/images/instagram-2.jpg" alt="hinhAnh">
+        <img src="/images/instagram-3.jpg" alt="hinhAnh">
 
-    <p>Tìm mã màu <input type="color" /></p>
+        <img src="/images/instagram-1.jpg" alt="hinhAnh">
+        <img src="/images/instagram-2.jpg" alt="hinhAnh">
+        <img src="/images/instagram-3.jpg" alt="hinhAnh">
 
+        <img src="/images/instagram-1.jpg" alt="hinhAnh">
+        <img src="/images/instagram-2.jpg" alt="hinhAnh">
+        <img src="/images/instagram-3.jpg" alt="hinhAnh">
+
+        <img src="/images/instagram-1.jpg" alt="hinhAnh">
+        <img src="/images/instagram-2.jpg" alt="hinhAnh">
+        <img src="/images/instagram-3.jpg" alt="hinhAnh">
+      </div>
+    </div><!-- ####Phần thư viện ảnh#### -->
+    <!-- ####Phần copyright cuối trang#### -->
+    <div class="copyright">
+      &copy; 2022 &#128312; Lê Thành Nhân &#128312; Nguyễn Mạnh Tùng
+    </div>
 </body>
 
 </html>
