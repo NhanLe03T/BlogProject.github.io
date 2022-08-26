@@ -65,10 +65,11 @@ a {
 /* ####Phần hình ảnh và tiêu đề đầu trang#### */
 .topImage {
   position: relative;
-  background-image: url(/images/girlAndRain.jpg);
+  background-image: url(/images/background-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   width: 100%;
   height: var(--Top-image-height);
   margin: 0px;
@@ -118,7 +119,27 @@ a {
 .contentItem a:visited {
   color: var(--Background-color);
 }
-
+.contentItem:hover{
+  font-size: 18px;
+  background-color: rgb(241, 147, 137);
+  
+}
+.contentHover{
+  position: absolute;
+  z-index: 3;
+  background-color: var(--Theme-color);
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 1px 1px 2px black;
+  display: none;
+}
+.contentHover li{
+  list-style: none;
+}
+.contentItem:hover .contentHover{
+  display: block;
+}
 /* ####Thumbnail bên dưới thanh nội dung#### */
 .bigThumbnail {
   box-sizing: border-box;
@@ -138,14 +159,23 @@ a {
   background-repeat: no-repeat;
   box-shadow: 1px 1px 2px black;
 }
+.active{
+  display: block !important;
+}
+.arrow{
+  display: none;
+}
 .thumbnailItem:first-child {
   background-image: url(/images/thumbnail1.jpg);
+  background-position: center;
 }
 .thumbnailItem:nth-child(2) {
   background-image: url(/images/thumbnail2.jpg);
+  background-position: center;
 }
 .thumbnailItem:nth-child(3) {
   background-image: url(/images/thumbnail3.jpg);
+  background-position: center;
 }
 .thumbnailText {
   position: absolute;
@@ -167,7 +197,16 @@ a {
   padding: 0px;
   text-align: center;
 }
-
+.thumbnailItem:hover{
+  transform:scale(1.05) ;
+  transition-duration:0.5s ;
+}
+.thumbnailItem:hover .thumbnailText{
+  color: var(--Theme-color);
+  border-color: var(--Theme-color) ;
+  background-color: rgba(174, 164, 164, 0.3);
+  transition-duration: 0.5s;
+}
 /* ####Phần nội dung chính của web#### */
 .mainContent {
   position: relative;
@@ -192,6 +231,7 @@ a {
   box-sizing: border-box;
   width: 100%;
   background-image: url(/images/leftprofile.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -264,8 +304,8 @@ a {
 .rec-posts-container{
   box-sizing: border-box;
   margin-top: 20px;
-  text-align: start;
-  width: 100%;
+  text-align: center;
+  width: 90%;
   padding-bottom: 20px;
 }
 .post{
@@ -276,6 +316,7 @@ a {
   padding-bottom: 5px;
   flex-wrap: nowrap;
   margin-top: 5px;
+  margin-left: 5px;
 }
 .post > img{
   display: inline-block;
@@ -284,7 +325,8 @@ a {
 }
 .post-details{
   display: inline-block;
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 .post-name{
   text-transform: uppercase;
@@ -427,4 +469,21 @@ a {
   text-align: center;
   padding: 5px;
   font-size: 0.5rem;
+}
+/* go to top */
+.gototop{
+  position: fixed;
+  display: inline-block;
+  background-color: var(--Theme-color);
+  width: 40px;
+  text-align: center;
+  right: 10px;
+  bottom: 10px;
+}
+.gototop i{
+  font-size: 2.5rem;
+}
+.gototop:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
 }

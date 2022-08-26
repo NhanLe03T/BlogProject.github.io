@@ -8,48 +8,82 @@
   <title>Blog ca nhan</title>
   <meta http-equiv="refresh" content="100" />
   <meta name="blog" content="blog ca nhan" />
+  <script src="/index.js"></script>
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="/Responsive.css">
   <link href="/images/webicon.png" rel="shortcut icon" />
   <script src="https://kit.fontawesome.com/593a15a285.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- ####Phần hình ảnh và tiêu đề đầu trang#### -->
-  <div class="topImage">
+  <div class="topImage" id="Top">
     <div class="blogerName centering">
-      <div class="title-1">Diễn viên điện ảnh</div>
+      <div class="title-1">Cuộc đời là những chuyến đi</div>
       <br />
-      <div class="name-1">Ninh Dương Lan Ngọc</div>
+      <div class="name-1">Khoai Lang Thang</div>
     </div>
   </div>
   <!-- ####Thanh nội dung#### -->
   <div class="contentBar flexbox">
-    <div class="contentItem"><a href="#">lối sống</a></div>
-    <div class="contentItem"><a href="#">du lịch</a></div>
-    <div class="contentItem"><a href="#">âm nhạc</a></div>
-    <div class="contentItem"><a href="#">thức ăn</a></div>
-    <div class="contentItem"><a href="#">phim ảnh</a></div>
+    <div class="contentItem"><a href="#">lối sống</a>
+      <ul class="contentHover">
+        <li>Chu de 1</li>
+        <li>Chu de 2</li>
+        <li>Chu de 3</li>
+      </ul>
+    </div>
+    <div class="contentItem"><a href="#">du lịch</a>
+      <ul class="contentHover">
+        <li>Chu de 1</li>
+        <li>Chu de 2</li>
+        <li>Chu de 3</li>
+      </ul>
+    </div>
+    <div class="contentItem"><a href="#">âm nhạc</a>
+      <ul class="contentHover">
+        <li>Chu de 1</li>
+        <li>Chu de 2</li>
+        <li>Chu de 3</li>
+      </ul>
+    </div>
+    <div class="contentItem"><a href="#">ẩm thực</a>
+      <ul class="contentHover">
+        <li>Chu de 1</li>
+        <li>Chu de 2</li>
+        <li>Chu de 3</li>
+      </ul>
+    </div>
+    <div class="contentItem"><a href="#">phim ảnh</a>
+      <ul class="contentHover">
+        <li>Chu de 1</li>
+        <li>Chu de 2</li>
+        <li>Chu de 3</li>
+      </ul>
+    </div>
   </div>
 
   <!-- ####Thumbnail bên dưới thanh nội dung#### -->
   <div class="bigThumbnail flexbox">
-    <div class="thumbnailItem">
+    <div class="thumbnailItem active" rel="1" id="main-thumb">
       <div class="thumbnailText centering">
         <p class="centering">Du lịch</p>
       </div>
     </div>
 
-    <div class="thumbnailItem">
+    <div class="thumbnailItem" rel="2">
       <div class="thumbnailText centering">
-        <p class="centering">Thức ăn</p>
+        <p class="centering">Ẩm thực</p>
       </div>
     </div>
 
-    <div class="thumbnailItem">
+    <div class="thumbnailItem" rel="3">
       <div class="thumbnailText centering">
         <p class="centering">Lối sống</p>
       </div>
     </div>
+    <div class="arrow ar-left" onclick="NextSlideLeft()"><i class="fa-regular fa-circle-left"></i></div>
+      <div class="arrow ar-right" onclick="NextSlideRight()"><i class="fa-regular fa-circle-right"></i></div>
   </div>
 
     <!-- ####Phần nội dung chính của web#### -->
@@ -307,24 +341,22 @@
             <img class="avatar" src="/images/avatar.jpg" alt="avatar">
           </div>
           <div class="name">
-            Ninh Dương <br> Lan Ngọc
+            Đinh Võ Hoài Phương
           </div>
           <div class="country">
-            <i class="fa-solid fa-location-dot"></i> Quê quán gì đó
+            <i class="fa-solid fa-location-dot"></i> TP. Hồ Chí Minh
           </div>
-          <div class="introduce">Phần này là phần tự giới thiệu bản thân... Alice was beginning to get very tired of
-            sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book
-            her sister was reading, but it had no pictures or conversations in it, `and what is the use of a book,'
-            thought Alice `without pictures or
-            conversation?'</div>
+          <div class="introduce">
+            Tên thật Đinh Võ Hoài Phương, mọi người thường gọi mình là Khoai. Yêu du lịch, thích tìm hiểu văn hóa và thử những món ăn ngon. Khoác vai nhau nhé, rồi mình sẽ kể bạn nghe những trải nghiệm khó quên của một thời tuổi trẻ.
+          </div>
           <div class="social-media flexbox">
-            <a href="https://www.facebook.com/fromninhduonglanngoc" target="_blank"><i
+            <a href="https://www.facebook.com/KhoaiLangThang" target="_blank"><i
                 class="fa-brands fa-facebook s-mItem"></i></a>
-            <a href="https://www.youtube.com/NinhD%C6%B0%C6%A1ngLanNg%E1%BB%8DcOfficial" target="_blank"><i
+            <a href="https://www.youtube.com/khoailangthang" target="_blank"><i
                 class="fa-brands fa-youtube s-mItem"></i></a>
-            <a href="mailto:ninhduonglanngoc.official@gmail.com" target="_blank"><i
+            <a href="mailto:hi@buithanhbinh.com" target="_blank"><i
                 class="fa-solid fa-envelope s-mItem"></i></a>
-            <a href="https://www.instagram.com/ninh.duong.lan.ngoc/" target="_blank"><i
+            <a href="https://www.instagram.com/khoailangthang/" target="_blank"><i
                 class="fa-brands fa-instagram s-mItem"></i></a>
           </div>
         </div>
@@ -334,7 +366,7 @@
           <div class="cate-menu">
             <details>
               <summary class="cate-summary flexbox">
-                <div>Thức ăn</div>
+                <div>Ẩm thực</div>
                 <div><i class="fa-solid fa-angle-right"></i></div>
               </summary>
               <div class="cate-item">
@@ -441,12 +473,8 @@
         <div class="creBox">
           <div class="creBox-title">quan điểm của tôi</div>
           <div class="opinion">
-            Đây là phần quan điểm cá nhân...The words hadn't flowed from his fingers for the past few weeks. He never
-            imagined he'd find himself with writer's block, but here he sat with a blank screen in front of him. That
-            blank screen taunting him day after day had started to play with his mind. He didn't understand why he
-            couldn't even type a single word, just one to begin the process and build from there. And yet, he already
-            knew that the eight hours he was prepared to sit in front of his computer today would end with the screen
-            remaining blank.
+            <p>Hơn 2 năm, nhiều chuyện trải qua, nhiều người gặp mặt, kể sao hết trong mấy mươi phút, tự nhiên tui nghĩ, khi mình 40, 60 tuổi, hay lụ khụ 80 100, tui sẽ ngồi trước hiên nhà, kêu tụi cháu lại rồi chỉ vô màn hình mà tự hào nói rằng, ông bây hồi còn trẻ đó, bây hú hồn chưa. Haha, đảm bảo tụi nhỏ sẽ lác mắt là cái chắc</p>
+            <p>Rồi thì, Những người mình gặp, những chuyện mình trải qua luôn có lý do của nó, Khoai hiện tại cảm thấy hạnh phúc hơn, yêu đời hơn, trách nhiệm hơn và luôn biết ơn những điều đã qua trong quá khứ, những điều đã giúp mình có được ngày hôm nay.</p>
           </div>
         </div>
 
@@ -454,21 +482,14 @@
         <div class="creBox">
           <div class="creBox-title">theo dõi tôi trên facebook</div>
           <div class="fb-page">
-            <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffromninhduonglanngoc&tabs=timeline&width=310&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-              width="310" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-              allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKhoaiLangThang&tabs=timeline&width=310&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="310" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
         </div>
         <!-- Phần youtube -->
         <div class="creBox">
           <div class="creBox-title">theo dõi tôi trên youtube</div>
           <div class="youtube">
-            <iframe width="300" src="https://www.youtube.com/embed/videoseries?list=PLI7MJyqzal5S5bGtlm0K5wVj90eBEU__N"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+              <iframe width="300" src="https://www.youtube.com/embed/videoseries?list=PLUv9_QI0iRBY-myT00hxFtCXML2p0zKni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div> <!-- ###Phần nội dung bên phải### -->
@@ -506,6 +527,10 @@
     <div class="copyright">
       &copy; 2022 &#128312; Lê Thành Nhân &#128312; Nguyễn Mạnh Tùng
     </div>
+    <!-- go to top -->
+    <a class="gototop"  onclick="gototop()">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
 </body>
 
 </html>

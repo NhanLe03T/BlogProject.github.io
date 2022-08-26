@@ -1,0 +1,54 @@
+@media screen and (max-width: 600px){
+    /* phần những bài post gần đây */
+    .post{
+        flex-wrap: wrap;
+    }
+    .post-details{
+        margin: 0px;
+        margin-top: 5px;
+        justify-content: flex-start;
+    }
+    /* phần tên bloger */
+    .name-1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:550px){
+    /* phần nội dung chính */
+    .rightContent{
+        display: none;
+    }
+    .leftContent{
+        width: 100%;
+    }
+    /* phần thư viện ảnh */
+    .gallery > img{
+        width: 33.33333%;
+    }
+    /* phần thumnail bên dưới thanh menu */
+    .thumbnailItem{
+        display: none;
+        width: 100%;
+    }
+    .bigThumbnail{
+        position: relative;
+    }
+    .arrow{
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translate(top = -50%);
+    }
+    .arrow i{
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+    .ar-left{
+        left: 0px;
+        margin-left: 10px;
+    }
+    .ar-right{
+        right: 0px;
+        margin-right: 10px;
+    }
+}
