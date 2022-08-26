@@ -207,6 +207,19 @@ a {
   background-color: rgba(174, 164, 164, 0.3);
   transition-duration: 0.5s;
 }
+/* Hiện thông tin */
+.show-info{
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: none;
+}
+.show-info input{
+  background-color: var(--Theme-color);
+  border: none;
+  width: 200px;
+  height: 30px;
+}
 /* ####Phần nội dung chính của web#### */
 .mainContent {
   position: relative;
@@ -421,6 +434,10 @@ a {
   box-sizing: border-box;
   text-align: center;
   justify-content: space-between;
+  width: 100%;
+}
+.menu-container{
+  width: 100%;
 }
 .menu-content-title{
   font-size: 1rem;
@@ -486,4 +503,31 @@ a {
 .gototop:hover{
   transform: scale(1.2);
   transition-duration: 0.5s;
+}
+/* Đổi trang */
+.page-num{
+  background-color: white;
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 50%;
+  margin-top:30px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+  text-align: center;
+}
+.page-num i{
+  font-size: 1.5rem;
+  color: var(--Background-color);
+}
+.page-num:first-child{
+  background-color: var(--Theme-color);
+}
+.page{
+  display: none;
+}
+.page-1{
+  display: flex;
 }

@@ -10,16 +10,25 @@
     }
     /* phần tên bloger */
     .name-1{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 }
 @media screen and (max-width:550px){
     /* phần nội dung chính */
     .rightContent{
-        display: none;
+        display:none;
+        width: 100%;
+    }
+    .mainContent{
+        flex-direction: column-reverse;
+        margin-top: 0px;
     }
     .leftContent{
         width: 100%;
+    }
+    /* ẩn hiện thông tin bloger */
+    .show-info{
+        display: block;
     }
     /* phần thư viện ảnh */
     .gallery > img{
